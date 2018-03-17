@@ -63,6 +63,8 @@ class SampleClient {
 		String randomCode = SAMPLE_COUNTRY_CODES
 				.get(this.random.nextInt(SAMPLE_COUNTRY_CODES.size()));
 		System.out.println("Looking for country with code '" + randomCode + "'");
+
+		// call for get cache
 		this.countryService.findByCode(randomCode);
 	}
 

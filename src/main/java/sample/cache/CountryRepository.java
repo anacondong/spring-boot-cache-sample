@@ -26,7 +26,7 @@ public class CountryRepository {
 
 	@Cacheable
 	public Country findByCode(String code) {
-		System.out.println("---> Loading country with code '" + code + "'");
+		System.out.println("************* Compute Cache and Loading country with code '" + code + "' ************");
 		return new Country(code);
 	}
 
